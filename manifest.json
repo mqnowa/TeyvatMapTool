@@ -1,0 +1,14 @@
+{
+    "name": "TeyvatMapTool",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Enhance TeyvatMap Experience.",
+    "content_scripts": [{
+        "matches": ["https://act.hoyolab.com/ys/app/interactive-map/*"],
+        "run_at": "document_idle",
+        "js": [
+            "content.js"
+        ]
+    }],
+    "permissions": []
+}
